@@ -1,0 +1,19 @@
+.table{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  border-collapse: collapse;
+  color:#666;
+}
+.table tr{
+ height:40px;
+ width:100%;
+ border-bottom:1px solid #ccc;
+}
+.table tr td:nth-child(2){
+ text-align:left;
+}
+.table input[type=button]{
+ background: #c0c0c0;
+ color:#666;
+}
