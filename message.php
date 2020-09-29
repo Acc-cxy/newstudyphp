@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title>留言板</title>
-	
   <link href="css/style.css" type="text/css" rel="stylesheet">
 	<style type="text/css">
 	   .table img{
@@ -96,12 +95,7 @@
 	<div id="detail">
 
         <?php
-        $conn=mysqli_connect("localhost","root","root");
-        if(!$conn){
-            die("数据库链接失败!");
-        }
-        mysqli_select_db($conn,"liuyan");
-        mysqli_query($conn,"set names utf8");
+        include("database.php");
         $sql ="select * from obj_message";
         $rst=mysqli_query($conn,$sql);
 
