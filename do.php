@@ -13,6 +13,8 @@
 
     $sql ="insert into obj_message set name='".$arr['username']."',image='".$arr['face']."',info='".$arr['msg']."',time='".date("Y-m-d H:i:s")."'";
     $rst=mysqli_query($conn,$sql);
+
+
     if($rst){
 //        echo "留言成功";
         echo "<script>alert('留言成功');location.href='message.php'</script>";

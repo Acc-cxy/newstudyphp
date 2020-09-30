@@ -92,13 +92,11 @@
         </tr>
     </table>
 </form>
-	<div id="detail">
-
+    <div id="detail">
         <?php
         include("database.php");
         $sql ="select * from obj_message";
         $rst=mysqli_query($conn,$sql);
-
         while($arr = mysqli_fetch_assoc($rst)){
 
         ?>
@@ -113,8 +111,9 @@
                 <div>删除</div>
             </div>
         </div>
-        <?php }?>
-
+        <?php }
+            echo '<p style="text-align: center">'.mysqli_num_rows($rst).'</p>';
+        ?>
 	</div>
 
 
